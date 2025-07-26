@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body, html {
+  min-height: 100vh;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  color: #f3f4f6;
+  letter-spacing: 0.01em;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: rgba(30, 41, 59, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);
+  border-radius: 8px;
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 24px;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+}
+
+.futuristic-header {
+  font-size: 2.5rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #6366f1 0%, #ec4899 50%, #a21caf 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0 2px 24px rgba(99, 102, 241, 0.2);
+  letter-spacing: 0.03em;
+}
+
+.futuristic-label {
+  font-weight: 600;
+  color: #6366f1;
+  letter-spacing: 0.02em;
+}
+
+.futuristic-input, .futuristic-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 14px;
+  border: 1.5px solid rgba(99, 102, 241, 0.18);
+  background: rgba(255,255,255,0.25);
+  color: #22223b;
+  font-size: 1rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 rgba(99, 102, 241, 0.04);
+}
+.futuristic-input:focus, .futuristic-textarea:focus {
+  outline: none;
+  border: 1.5px solid #6366f1;
+  box-shadow: 0 0 0 2px #6366f1aa;
+}
+
+.futuristic-btn {
+  background: linear-gradient(90deg, #6366f1 0%, #ec4899 100%);
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 16px;
+  padding: 0.75rem 2rem;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 24px 0 rgba(99, 102, 241, 0.18);
+  transition: transform 0.15s, box-shadow 0.15s, background 0.2s;
+  cursor: pointer;
+}
+.futuristic-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: linear-gradient(90deg, #4f46e5 0%, #db2777 100%);
+  box-shadow: 0 8px 32px 0 rgba(99, 102, 241, 0.28);
+}
+
+.futuristic-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1.5px solid rgba(99, 102, 241, 0.12);
+}
